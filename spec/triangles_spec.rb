@@ -16,10 +16,12 @@ describe ('Triangle#equilateral') do
 end
 
 describe ('Triangle#equilateral') do
-  it('checks to see if three sides create isosceles triangle') do
+  it('checks to see if three sides create equilateral triangle') do
     tc = Triangle.new(4, 4, 4)
-      expect(tc.isosc()).to(eq(true))
+      expect(tc.equilateral()).to(eq(true))
   end
+
+
 end
 
 # describe '#Album' do
