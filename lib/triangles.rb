@@ -26,6 +26,9 @@ class Triangle
     end
     return false
   end
+
+  def check_isosceles
+    if (@side)
 end
     
     
