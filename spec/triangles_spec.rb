@@ -42,6 +42,13 @@ describe ('Triangle#check_isosceles') do
       expect(tc.check_isosceles()).to(eq(true))
   end
 end
+
+describe ('Triangle#check_isosceles') do
+  it('checks to see if three sides create a isosceles triangle') do
+    tc = Triangle.new(3,2,4)
+      expect(tc.check_isosceles()).to(eq(false))
+  end
+end
 # describe '#Album' do
 #   before(:each) do
 #     Triangle.clear()
