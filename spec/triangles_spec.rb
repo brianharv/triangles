@@ -29,6 +29,13 @@ describe ('Triangle#check_scalene') do
   end
 end
 
+describe ('Triangle#check_scalene') do
+  it('checks to see if three sides create a scalene triangle') do
+    tc = Triangle.new(4,4,4)
+      expect(tc.check_scalene()).to(eq(false))
+  end
+end
+
 # describe '#Album' do
 #   before(:each) do
 #     Triangle.clear()
