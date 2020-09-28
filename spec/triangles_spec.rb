@@ -49,3 +49,10 @@ describe ('Triangle#check_isosceles') do
       expect(tc.check_isosceles()).to(eq(false))
   end
 end
+
+describe ('Triangle#return_triangle_type') do
+  it('checks to see the type of triangle') do
+    tc = Triangle.new(4,4,4)
+      expect(tc.return_triangle_type()).to(eq("These side lengths make an equilateral triangle"))
+  end
+end
