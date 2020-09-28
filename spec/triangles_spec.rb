@@ -49,7 +49,3 @@ describe ('Triangle#check_isosceles') do
       expect(tc.check_isosceles()).to(eq(false))
   end
 end
-# describe '#Album' do
-#   before(:each) do
-#     Triangle.clear()
-#   end
