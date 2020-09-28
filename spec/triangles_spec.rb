@@ -11,7 +11,7 @@ end
 describe ('Triangle#equilateral') do
   it('checks to see if three sides create equilateral triangle') do
     tc = Triangle.new(4, 5, 6)
-      expect(tc.equilateral()).to(eq(true))
+      expect(tc.equilateral()).to(eq(false))
   end
 end
 
