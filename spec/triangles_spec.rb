@@ -20,8 +20,13 @@ describe ('Triangle#equilateral') do
     tc = Triangle.new(4, 4, 4)
       expect(tc.equilateral()).to(eq(true))
   end
+end  
 
-
+describe ('Triangle#check_scalene') do
+  it('checks to see if three sides create a scalene triangle') do
+    tc = Triangle.new(4,5,7)
+      expect(tc.check_scalene()).to(eq(true))
+  end
 end
 
 # describe '#Album' do

@@ -19,6 +19,13 @@ class Triangle
     end
     return false
   end
+
+  def check_scalene
+    if (@side1 != @side2) && (@side1 != @side3) && (@side2 != @side3)
+      return true
+    end
+    return false
+  end
 end
     
     
