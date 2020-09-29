@@ -1,17 +1,18 @@
 class Triangle
+  include Enumerable
   attr_accessor(:side1, :side2, :side3)
-  attr_reader(:triangle_type)
+  # attr_reader(:triangle_type)
 
   def initialize(side1, side2, side3)
     @side1 = side1
     @side2 = side2
     @side3 = side3
-    @triangle_type = return_triangle_type()
+    # @triangle_type = return_triangle_type()
   end
 
   def return_triangle_type
     if not_a_triangle()
-        return "These side lengths don't make a triangle"
+      return "these side lengths don't make a triangle"
     elsif equilateral()
         return "These side lengths make an equilateral triangle"
     elsif check_scalene()
@@ -21,12 +22,7 @@ class Triangle
     end
   end  
 
-  def not_a_triangle
-    if @side1 > (@side2 + @side3) || @side2 > (@side1 + @side3) || @side3 > (@side1 + @side2)
-      return true
-    end
-      return false 
-  end
+  
 
   def equilateral
     if @side1 === @side2 && @side2 === @side3 && @side1 === @side3 
@@ -49,6 +45,12 @@ class Triangle
     return false
   end    
     
+  def not_a_triangle
+    if @side1 > (@side2 + @side3) || @side2 > (@side1 + @side3) || @side3 > (@side1 + @side2)
+      return true
+    end
+      return false 
+  end
 end
 
   

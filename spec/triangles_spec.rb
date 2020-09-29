@@ -4,7 +4,7 @@ require('triangles')
 describe ('Triangle#not_a_triangle') do
   it('returns true when three sides to not create a triangle') do
   tc = Triangle.new(3, 3, 22)
-    expect(tc.not_a_triangle).to(eq(true))
+    expect(tc.not_a_triangle()).to(eq(true))
   end
 end
 
